@@ -126,6 +126,97 @@
 
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-thumb { background: #345485; }
+
+ /* SAO風のコンテナ枠設定 */
+.sao-video-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6px; /* 内側の黒い隙間（SAOの二重枠っぽさ） */
+    background: rgba(0, 0, 0, 0.6); /* 半透明のダーク背景 */
+    border: 2px solid #ff7700; /* SAOといえば情熱的なオレンジ、またはサイバーな淡い光 */
+    box-shadow: 0 0 15px rgba(255, 119, 0, 0.4), inset 0 0 10px rgba(255, 119, 0, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* 四隅の近未来UI風コーナーデコレーション */
+.sao-corner {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #ffffff; /* 輝く角のアクセント */
+    z-index: 10;
+}
+.sao-corner.tl { top: 0; left: 0; border-right: none; border-bottom: none; }
+.sao-corner.tr { top: 0; right: 0; border-left: none; border-bottom: none; }
+.sao-corner.bl { bottom: 0; left: 0; border-right: none; border-top: none; }
+.sao-corner.br { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+/* 画面を走る、うっすらとしたゴールド・オレンジ風スキャンライン 
+.sao-scanline {
+    position: absolute;
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+     
+    background: 
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+        linear-gradient(90deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.1), rgba(218, 165, 32, 0.2));
+    
+    background-size: 100% 4px, 6px 100%;
+    pointer-events: none;
+    
+    z-index: 20 !important; 
+    opacity: 0.6; 
+}*/
+
+/* ついでに画像がscanlineを隠さないようにタグを調整 */
+.sao-movie-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; /* scanlineより下にする */
+}
+
+
+/* 左上に浮かぶUI風のステータスタグ */
+.sao-tag {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: #ff7700;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    z-index: 6;
+    box-shadow: 0 0 5px rgba(255, 119, 0, 0.8);
+}
+
+/* aタグ化しても崩れないようにするための魔法 */
+.sao-link-box {
+    display: block;        /* インライン要素をブロック化 */
+    text-decoration: none; /* 下線を消す */
+    color: inherit;        /* 色を継承 */
+    transition: transform 0.3s;
+}
+
+/*.sao-link-box:hover {
+    transform: scale(1.02); 
+    border-color: #ffaa00;  
+}*/
+
+/* 念のため画像もリンクに合わせて整理 */
+.sao-link-box .sao-movie-content {
+    pointer-events: none; /* クリック判定を親のaタグに任せる */
+}
+
     </style>
 </head>
 <body>
@@ -133,6 +224,23 @@
     <div class="system-banner">
         ALL IN MEDIA
     </div>
+
+    <div class="section-title">AI IDOL LIVE PERFORMANCE</div>
+
+        <!-- 🌸 ここからSAO風サイバーフレーム魔法 -->
+        
+<a href="https://www.mureka.ai/ja/profile?source=icon&user_id=81912236343297" 
+   target="_blank" rel="noopener" 
+   class="sao-video-container sao-link-box">
+    
+    <div class="sao-corner tl"></div>
+    <div class="sao-corner tr"></div>
+    <div class="sao-corner bl"></div>
+    <div class="sao-corner br"></div>
+    <div class="sao-scanline"></div>
+    <img src="https://socrarius-tool.com/media/banner.png" class="sao-movie-content">  
+</a>
+
 
     <div class="section-title">WATCH MOVIE WITH AI</div>
 
