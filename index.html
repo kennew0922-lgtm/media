@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. 音源の配置（IDをユニークにする） -->
+    <audio id="magic" preload="auto">
+    <source src="https://socrarius-tool.com/launcher/magic23.mp3" type="audio/mp3">
+    </audio>
+    <audio id="click" preload="auto">
+    <source src="https://socrarius-tool.com/launcher/magic20.mp3" type="audio/mp3">
+    </audio>
+    <audio id="button" preload="auto">
+    <source src="https://socrarius-tool.com/launcher/button.mp3" type="audio/mp3">
+    </audio>
+
     <title>MAGIC NAME & CONTENT</title>
     <style>
         body {
@@ -247,91 +259,119 @@
 
     <div class="section-title">MAJOR MEDIA</div>
     <div class="launcher-grid">
-        <a href="https://www.amazon.co.jp/gp/video/storefront" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon1.png"></a>
-        <a href="https://video.unext.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon2.png"></a>
-        <a href="https://www.netflix.com/jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon3.png"></a>
-        <a href="https://disneyplus.disney.co.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon4.png"></a>
-        <a href="https://tver.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon5.png"></a>
+        <a href="https://www.amazon.co.jp/gp/video/storefront" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon1.png"></a>
+        <a href="https://video.unext.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon2.png"></a>
+        <a href="https://www.netflix.com/jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon3.png"></a>
+        <a href="https://disneyplus.disney.co.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon4.png"></a>
+        <a href="https://tver.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon5.png"></a>
         <a href="https://abema.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon6.png"></a>
-        <a href="https://www.dazn.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon7.png"></a>
+        <a href="https://www.dazn.com/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon7.png"></a>
         <a href="https://www.hulu.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon27.png"></a>
-        <a href="https://navi.telasa.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon28.png"></a>
-        <a href="https://www.web.nhk/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon29.png"></a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon8.png"></a>
-        <a href="https://twitcasting.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon31.png"></a>
-        <a href="https://whowatch.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon32.png"></a>
-        <a href="https://www.twitch.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon30.png"></a>
-        <a href="https://17.live/ja" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon9.png"></a>
+        <a href="https://navi.telasa.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon28.png"></a>
+        <a href="https://www.web.nhk/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon29.png"></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon8.png"></a>
+        <a href="https://twitcasting.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon31.png"></a>
+        <a href="https://whowatch.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon32.png"></a>
+        <a href="https://www.twitch.tv/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon30.png"></a>
+        <a href="https://17.live/ja" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon9.png"></a>
         <a href="https://vrchat.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon10.png"></a>
-        <a href="https://open.spotify.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon11.png"></a>
-        <a href="https://music.youtube.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon33.png"></a>
-        <a href="https://music.amazon.co.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon34.png"></a>
-        <a href="https://music.apple.com/jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon35.png"></a>
-        <a href="https://radiko.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon12.png"></a>
+        <a href="https://open.spotify.com/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon11.png"></a>
+        <a href="https://music.youtube.com/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon33.png"></a>
+        <a href="https://music.amazon.co.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon34.png"></a>
+        <a href="https://music.apple.com/jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon35.png"></a>
+        <a href="https://radiko.jp/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon12.png"></a>
     </div>
 
     <div class="section-title">MEDIA CREATION</div>
     <div class="launcher-grid">
-        <a href="https://app.clipchamp.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon13.png"></a>
-        <a href="https://docs.google.com/videos/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon14.png"></a>
-        <a href="https://photoshop.adobe.com/id?fid=1&promoid=6NCS6ZLJ&mv=other" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon41.png"></a>
-        <a href="https://new.express.adobe.com/home/tools/remove-background" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon15.png"></a>
-        <a href="https://www.photoroom.com/ja/tools/background-remover" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon16.png"></a>
-        <a href="https://vocalremover.org/ja/cutter" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon18.png"></a>
+        <a href="https://app.clipchamp.com/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon13.png"></a>
+        <a href="https://docs.google.com/videos/" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon14.png"></a>
+        <a href="https://photoshop.adobe.com/id?fid=1&promoid=6NCS6ZLJ&mv=other" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon41.png"></a>
+        <a href="https://new.express.adobe.com/home/tools/remove-background" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon15.png"></a>
+        <a href="https://www.photoroom.com/ja/tools/background-remover" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon16.png"></a>
+        <a href="https://vocalremover.org/ja/cutter" target="_blank" rel="noopener" class="memory-card launcher-card"data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon18.png"></a>
     </div>
 
     <div class="section-title">CONVERTER</div>
     <div class="launcher-grid">
-        <a href="https://www.freeconvert.com/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://www.freeconvert.com/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon21a.png"></a>
-        <a href="https://anyconv.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://anyconv.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon22.png"></a>
-        <a href="https://www.iloveimg.com/ja" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://www.iloveimg.com/ja" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon23.png"></a>
-        <a href="https://boost-tool.com/ja/tools/rename_file" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://boost-tool.com/ja/tools/rename_file" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon46.png"></a>
-        <a href="https://compresspng.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://compresspng.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon49.png"></a>
     </div>
 
     <div class="section-title">VOICE CHANGER</div>
     <div class="launcher-grid">
-        <a href="https://voice-changer.userlocal.jp/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://voice-changer.userlocal.jp/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon42.png"></a>
-        <a href="https://voicechanger.im/ja/app/speech" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://voicechanger.im/ja/app/speech" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon43.png"></a>
-        <a href="https://www.media.io/ai/jp/home" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://www.media.io/ai/jp/home" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon44.png"></a>
-        <a href="https://www.youcompress.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://www.youcompress.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon47.png"></a>
     </div>
 
             <div class="section-title">MATERIAL</div>
     <div class="launcher-grid">
-        <a href="https://soundeffect-lab.info/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://soundeffect-lab.info/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon24.png"></a>
-        <a href="https://maou.audio/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://maou.audio/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon48.png"></a>
-        <a href="https://stock.adobe.com/jp" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://stock.adobe.com/jp" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon36.png"></a>
-        <a href="https://pixta.jp/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://pixta.jp/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon25.png"></a>
-        <a href="https://commons.nicovideo.jp/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://commons.nicovideo.jp/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon45.png"></a>
-        <a href="https://www.cgtrader.com/ja" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://www.cgtrader.com/ja" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon26.png"></a>
-        <a href="https://free3d.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://free3d.com/ja/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon37.png"></a>
-        <a href="https://makerworld.com/ja" target="_blank" rel="noopener" class="memory-card launcher-card">
+        <a href="https://makerworld.com/ja" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
         <img src="https://socrarius-tool.com/media/icon38.png"></a>
     </div>
 
     <div class="section-title">ADMINISTRATION SITE</div>
     <div class="launcher-grid">
-        <a href="https://studio.youtube.com/channel/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon19.png"></a>
-        <a href="https://console.cloud.google.com/" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon39.png"></a>
-        <a href="https://developer.android.com/distribute/console?hl=ja" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon40.png"></a>
-        <a href="https://developer.spotify.com/dashboard" target="_blank" rel="noopener" class="memory-card launcher-card"><img src="https://socrarius-tool.com/media/icon20.png"></a>
+        <a href="https://studio.youtube.com/channel/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon19.png"></a>
+        <a href="https://console.cloud.google.com/" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon39.png"></a>
+        <a href="https://developer.android.com/distribute/console?hl=ja" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon40.png"></a>
+        <a href="https://developer.spotify.com/dashboard" target="_blank" rel="noopener" class="memory-card launcher-card" data-sound="click">
+            <img src="https://socrarius-tool.com/media/icon20.png"></a>
     </div>
 
         <div class="section-title">AI IDOL LIVE PERFORMANCE</div>
@@ -340,7 +380,7 @@
         
 <a href="https://www.mureka.ai/ja/profile?source=icon&user_id=81912236343297" 
    target="_blank" rel="noopener" 
-   class="sao-video-container sao-link-box">
+   class="sao-video-container sao-link-box" data-sound="magic">
     
     <div class="sao-corner tl"></div>
     <div class="sao-corner tr"></div>
@@ -356,7 +396,7 @@
 
     <a href="https://socrarius-tool.com/ColorBanana/" 
    target="_blank" rel="noopener" 
-   class="sao-video-container sao-link-box">
+   class="sao-video-container sao-link-box" data-sound="magic">
     
     <div class="sao-corner tl"></div>
     <div class="sao-corner tr"></div>
@@ -370,11 +410,25 @@
 
     
     <script>
+    //🌸動画切り替え魔法
     function changeVideo(videoId) {
         const videoIframe = document.getElementById('main-video');
         videoIframe.src = "https://www.youtube-nocookie.com/embed/" + videoId;
         console.log("動画を切り替えました: " + videoId);
     }
+
+     //3. 音を鳴らすJavaScript（HTMLを増やしてもこのまま共通で使える）
+    const soundLinks = document.querySelectorAll('.play-sound');
+    soundLinks.forEach(link => {
+    link.addEventListener('click', () => {
+    const soundId = link.getAttribute('data-sound');
+    const audio = document.getElementById(soundId);
+    if (audio) {
+    audio.currentTime = 0;
+    audio.play().catch(e => console.log("Audio play blocked:", e));
+    }
+    });
+    });
     </script>
 </body>
 </html>
