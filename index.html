@@ -433,12 +433,13 @@
 
     
     <script>
-    //🌸動画切り替え魔法
-    function changeVideo(videoId) {
-        const videoIframe = document.getElementById('main-video');
-        videoIframe.src = "https://www.youtube-nocookie.com/embed/" + videoId;
-        console.log("動画を切り替えました: " + videoId);
-    }
+// 🌸 動画切り替え魔法（キャッシュ回避＆自動再生パラメータ付き）
+function changeVideo(videoId) {
+    const videoIframe = document.getElementById('main-video');
+    // パラメータを後ろにつけてYouTube側のキャッシュを強制クリア！
+    videoIframe.src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1&rel=0";
+    console.log("動画を切り替えました: " + videoId);
+}
 
      //3. 音を鳴らすJavaScript（HTMLを増やしてもこのまま共通で使える）
     const soundLinks = document.querySelectorAll('.play-sound');
