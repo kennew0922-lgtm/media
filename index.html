@@ -261,7 +261,7 @@
     <!-- 既存の16:9動画コンテナ -->
     <div class="video-frame-container" style="margin-bottom: 0; border: none; box-shadow: none;">
         <iframe id="main-video"
-            src="https://www.youtube-nocookie.com/embed/ghUjRy2wjd4";
+            src="https://www.youtube-nocookie.com/embed/ghUjRy2wjd4"
             frameborder="0" allowfullscreen>
         </iframe>
     </div>
@@ -456,11 +456,7 @@ function changeVideo(videoId) {
     });
     });
 
-    // 起動時に強制的に指定動画をセット（キャッシュ回避）
-    window.addEventListener("load", () => {
-    const defaultVideoId = "Lu6Kn_3sp5E"; // 初期表示したい動画IDに変える
-    changeVideo(defaultVideoId);
-});
+
     </script>
 </body>
 </html>
