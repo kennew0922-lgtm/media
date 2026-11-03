@@ -455,6 +455,12 @@ function changeVideo(videoId) {
     }
     });
     });
+
+    // 起動時に強制的に指定動画をセット（キャッシュ回避）
+    window.addEventListener("load", () => {
+    const defaultVideoId = "Lu6Kn_3sp5E"; // 初期表示したい動画IDに変える
+    changeVideo(defaultVideoId);
+});
     </script>
 </body>
 </html>
